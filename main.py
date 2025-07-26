@@ -23,7 +23,7 @@ def main():
         "8. Password must contain at least one special character.\n" +
         "9. Password should contain at least three Morse Code characters ('.', '-', '/') (No whitespaces allowed).\n" +
         "10. Password must contain at least one Roman numeral.\n" +
-        "11. Password should contain at least one prime number."
+        "11. Password should contain at least one prime number.\n" +
         "12. Password must contain at least one colour of the rainbow.\n" +
         "13. Password must contain a colour in #RRGGBB format.")
 
