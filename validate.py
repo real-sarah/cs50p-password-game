@@ -28,7 +28,7 @@ def formatt(num):
 def validate(password, song):
     song = snake_case(song)
     if checker0(song, password) == 100:
-        if checker1(song) == 100:
+        if checker1(password) == 100:
             if checker2(password) == 100:
                 if checker3(password) == 100:
                     if checker4(password) == 100:
@@ -41,6 +41,7 @@ def validate(password, song):
                                                 if checker11(password) == 100:
                                                     if checker12(password) == 100:
                                                         st.success("Password Game Defeated")
+                                                        st.write("You may use this password anywhere, we do not store passwords.")
                                                     else:
                                                         x = formatt(12)
                                                         st.error(x)

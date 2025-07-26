@@ -41,9 +41,9 @@ def checker1(password):
     else:
         return 100
 
-def checker2(pasword):
+def checker2(password):
     pattern = r"\s"
-    if match := re.search(pattern, pasword):
+    if match := re.search(pattern, password):
         return 2
     else:
         return 100

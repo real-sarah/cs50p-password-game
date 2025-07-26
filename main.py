@@ -8,7 +8,7 @@ def main():
     st.title(emojize(":chequered_flag:Password Game"))
     subheader = emojize(":video_game: Welcome to the Password Game")
     st.header(subheader)
-    st.subheader("Firstly enter the namw of your favourite artist. The top song from that artist will be looked up, and that will give us a start point. Further, follow the instruction set to beat the game")
+    st.subheader("Firstly enter the name of your favourite artist. The top song from that artist will be looked up, and that will give us a start point. Further, follow the instruction set to beat the game")
 
     show_more = st.toggle("Click here to display the instructions")
 
@@ -48,7 +48,10 @@ def main():
     if st.session_state.game_started:
         password = st.text_input("Your Password is: ", value = st.session_state.password)
         if password:
-            st.write(validate.validate(password, song))
+            validate.validate(password, song)
+        if st.button("End Game"):
+            st.write("Nice meeting you!")
+            st.stop()
 
 
 
