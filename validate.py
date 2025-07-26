@@ -4,7 +4,7 @@ import streamlit as st
 
 error = [
     "Password should contain song's name in snake_case",
-    "Password should be between 8 and 25 characters long",
+    "Password should be between 8 and 50 characters long",
     "Password must not contain any whitespace characters",
     "Password must contain at least one uppercase letter",
     "Password must contain at least two vowels in different cases",

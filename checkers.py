@@ -36,7 +36,7 @@ def checker0(song, password):
         return 100
 
 def checker1(password):
-    if len(password) < 8 or len(password) > 25:
+    if len(password) < 8 or len(password) > 50:
         return 1
     else:
         return 100
