@@ -8,12 +8,12 @@ def main():
     st.title(emojize(":chequered_flag:Password Game"))
     subheader = emojize(":video_game: Welcome to the Password Game")
     st.header(subheader)
-    st.subheader("Firstly enter the name of your favourite artist. The top song from that artist will be looked up, and that will give us a start point. Further, follow the instruction set to beat the game")
+    st.subheader("Firstly enter the name of your favourite artist. The top song from that artist will be looked up, and that will give us a starting point. Further, follow the instruction set to beat the game")
 
     show_more = st.toggle("Click here to display the instructions")
 
     if show_more:
-        st.write("1. Password should contain song's name in snake_case. For example, 'I Want It That Way' 'i_want_it_that_that_way'\n" +
+        st.write("1. Password should contain song's name in snake_case. For example, 'I Want It That Way' becomes 'i_want_it_that_that_way'\n" +
         "2. Password should be between 8 and 25 characters long.\n" +
         "3. Password should not contain any whitespace characters (spaces, tabs, newlines).\n" +
         "4. Password should contain at least one uppercase letter.\n" +
