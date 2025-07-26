@@ -127,11 +127,11 @@ def checker11(password):
         return 11
 
 def checker12(password):
-    pattern = r"#[0-9A-F]{3}"
+    pattern = r"#([0-9A-F]{2}){3}"
     if match := re.search(pattern, password, re.IGNORECASE):
         return 100
     else:
         return 12
 
 if __name__ == "__main__":
-    print(checker12("I_.wantit#00e0AAthYEllowy8899100214"))
+    print(checker12("#AABBHH"))
