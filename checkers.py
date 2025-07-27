@@ -11,6 +11,7 @@ def snake_case(song):
             new_song += char
     return new_song
 
+
 def is_prime(n):
     if n <= 1:
         return False
@@ -35,11 +36,13 @@ def checker0(song, password):
     else:
         return 100
 
+
 def checker1(password):
     if len(password) < 8 or len(password) > 50:
         return 1
     else:
         return 100
+
 
 def checker2(password):
     pattern = r"\s"
@@ -48,12 +51,14 @@ def checker2(password):
     else:
         return 100
 
+
 def checker3(password):
     pattern = r"[A-Z]+"
     if match := re.search(pattern, password):
         return 100
     else:
         return 3
+
 
 def checker4(password):
     pattern1 = r"[AEIOU]+"
@@ -62,9 +67,10 @@ def checker4(password):
     match2 = re.search(pattern2, password)
 
     if match1 and match2:
-            return 100
+        return 100
     else:
         return 4
+
 
 def checker5(password):
     pattern = r"\d"
@@ -72,6 +78,7 @@ def checker5(password):
         return 100
     else:
         return 5
+
 
 def checker6(password):
     pattern = r"\d+"
@@ -86,12 +93,14 @@ def checker6(password):
     else:
         return 6
 
+
 def checker7(password):
     pattern = r"\W+"
     if match := re.search(pattern, password):
         return 100
     else:
         return 7
+
 
 def checker8(password):
     pattern = r"[\./-]"
@@ -101,12 +110,14 @@ def checker8(password):
     else:
         return 8
 
+
 def checker9(password):
     pattern = r"[IVXLCDM]+"
     if match := re.search(pattern, password):
         return 100
     else:
         return 9
+
 
 def checker10(password):
     pattern = r"\d+"
@@ -119,6 +130,7 @@ def checker10(password):
             return 100
     return 10
 
+
 def checker11(password):
     rainbow = r"(violet|indigo|blue|green|yellow|orange|red)"
     if match := re.search(rainbow, password, re.IGNORECASE):
@@ -126,12 +138,14 @@ def checker11(password):
     else:
         return 11
 
+
 def checker12(password):
     pattern = r"#([0-9A-F]{2}){3}"
     if match := re.search(pattern, password, re.IGNORECASE):
         return 100
     else:
         return 12
+
 
 if __name__ == "__main__":
     print(checker12("#AABBHH"))

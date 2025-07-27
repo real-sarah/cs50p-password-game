@@ -21,6 +21,7 @@ error = [
 expression = ["Oops", "Uh-oh", "Oh-no", "Whoops", "Wait up", "No, no"]
 punctuation = ["..", "!"]
 
+
 def formatt(num):
     return f"{choice(expression)} {choice(punctuation)} {error[num]}"
 
@@ -40,8 +41,12 @@ def validate(password, song):
                                             if checker10(password) == 100:
                                                 if checker11(password) == 100:
                                                     if checker12(password) == 100:
-                                                        st.success("Password Game Defeated")
-                                                        st.write("You may use this password anywhere, we do not store passwords.")
+                                                        st.success(
+                                                            "Password Game Defeated"
+                                                        )
+                                                        st.write(
+                                                            "You may use this password anywhere, we do not store passwords."
+                                                        )
                                                     else:
                                                         x = formatt(12)
                                                         st.error(x)
