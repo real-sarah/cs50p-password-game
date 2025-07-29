@@ -1,5 +1,6 @@
 # PASSWORD GAME
-#### Video Demo:  <URL HERE>
+#### URL: https://cs50p-password-game.streamlit.app/
+#### Video Demo:  https://www.youtube.com/watch?v=I6nj65Ti7p8
 #### Description: 
 This is a simple Python project inspired by neal.fun's "The Password Game".
 The project aims at validating a given string against a set of instructions, passing all of which will lead to the game being defeated. 
